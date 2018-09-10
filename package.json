@@ -1,0 +1,45 @@
+{
+  "name": "satisfaction_console",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "Dev": "vue-cli-service serve",
+    "Build": "vue-cli-service build --clean",
+    "Translate": "./node_modules/@zendesk/client-i18n-tools/bin/download-locales --destination='./src/translations' --packages='app_satisfaction_console' --locales='./src/translations/locales.json'",
+    "Lint": "vue-cli-service lint",
+    "Test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "@zendesk/client-i18n-tools": "^10.3.0",
+    "@zendeskgarden/svg-icons": "^4.4.0",
+    "copy-webpack-plugin": "^4.5.2",
+    "json-loader": "^0.5.7",
+    "json2csv": "^4.1.6",
+    "underscore": "^1.9.1",
+    "vue": "^2.5.16",
+    "vue-spinner": "^1.0.3",
+    "vue-svg-loader": "^0.5.0",
+    "vuex": "^3.0.1",
+    "write-file-webpack-plugin": "^4.3.2",
+    "yaml-loader": "^0.5.0",
+    "zendesk_app_framework_sdk": "^2.0.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-plugin-unit-jest": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-airbnb": "^3.0.0-rc.5",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.0.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

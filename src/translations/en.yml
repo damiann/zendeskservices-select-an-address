@@ -1,0 +1,36 @@
+---
+title: "Select an Address"
+packages:
+  - default
+  - app_select_an_address
+
+parts:
+  - translation:
+      key: "txt.apps.select_an_address.app.name"
+      title: "App name"
+      value: "Select an Address"
+  - translation:
+      key: "txt.apps.select_an_address.app.short_description"
+      title: "Short Description for App: Select an Address"
+      value: "View available support addresses, Pick a support address when creating a new ticket, Change the support address associated with a ticket"
+      wip: true
+  - translation:
+      key: "txt.apps.select_an_address.app.long_description"
+      title: "Long Description for App: Select an Address"
+      value: "This ticket sidebar app provides a dropdown field containing all of your Support Addresses. It enables the Agent to a) create a ticket which will send updates from a particular Support Address, and b) change the support address an existing ticket sends from."
+      wip: true
+  - translation:
+      key: "txt.apps.select_an_address.app.installation_instructions"
+      title: "Installation Instructions for App: Select an Address"
+      value: "Simply click install."
+  - translation:
+      key: "txt.apps.select_an_address.globals.notification_message"
+      title: "Notification message"
+      value: "This ticket will send from"
+      screenshot: "https://drive.google.com/open?id=1yY5e0QjjszKrELlUsK4yMjO-PExxgurq"
+      wip: true
+  - translation:
+      key: "txt.apps.select_an_address.globals.default_label"
+      title: "Label for default emails"
+      screenshot: "https://drive.google.com/open?id=1bU30mYFMKA8NPjCCT8ulPFxLWZXr2i-4"
+      value: "Default"
