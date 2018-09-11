@@ -33,4 +33,4 @@ parts:
       key: "txt.apps.select_an_address.globals.default_label"
       title: "Label for default emails"
       screenshot: "https://drive.google.com/open?id=1bU30mYFMKA8NPjCCT8ulPFxLWZXr2i-4"
-      value: "Default"
+      value: "Default:"
