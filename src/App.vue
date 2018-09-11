@@ -3,11 +3,11 @@
     <select class="c-txt__input c-txt__input--select" @change="selectRecipient($event)">
      <option v-if="appLocation === 'ticket_sidebar'" v-for="address in addresses" :value="address.email"
       :selected="recipient === address.email">
-        <span v-if="address.default === true">{{$I18N('default_label')}}: </span>{{address.email}}
+        <span v-if="address.default === true">{{$I18N('default_label')}} </span>{{address.email}}
      </option>
      <option v-if="appLocation === 'new_ticket_sidebar'" v-for="address in addresses" :value="address.email"
       :selected="address.default == true">
-        <span v-if="address.default === true">{{$I18N('default_label')}}: </span>{{address.email}}
+        <span v-if="address.default === true">{{$I18N('default_label')}} </span>{{address.email}}
      </option>
     </select>
   </div>

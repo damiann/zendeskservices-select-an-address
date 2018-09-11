@@ -26,7 +26,7 @@ parts:
   - translation:
       key: "txt.apps.select_an_address.globals.notification_message"
       title: "Notification message"
-      value: "This ticket will send from"
+      value: "This ticket will send from {{email_address}}"
       screenshot: "https://drive.google.com/open?id=1yY5e0QjjszKrELlUsK4yMjO-PExxgurq"
       wip: true
   - translation:
