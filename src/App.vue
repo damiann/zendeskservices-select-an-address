@@ -94,7 +94,6 @@ export default {
     },
   },
   created() {
-    console.log('created');
     this.populateList()
     .then((addresses) => {
       if (typeof(addresses) === "string") {
