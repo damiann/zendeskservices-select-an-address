@@ -55,7 +55,7 @@ export default {
           }
         })
         .then((response) => {
-          zaf.client.invoke('notify', `${this.$I18N('notification_message')} ${email}`)
+          zaf.client.invoke('notify', `${this.$I18N('notification_message', email)}`)
         });
       }
     },
@@ -89,11 +89,12 @@ export default {
     setRecipient: function(email) {
       zaf.client.set('ticket.recipient', email)
       .then((response) => {
-        zaf.client.invoke('notify', `${this.$I18N('notification_message')} ${email}`)
+        zaf.client.invoke('notify', `${this.$I18N('notification_message', email)}`)
       });
     },
   },
   created() {
+    console.log('created');
     this.populateList()
     .then((addresses) => {
       if (typeof(addresses) === "string") {

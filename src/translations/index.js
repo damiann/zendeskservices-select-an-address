@@ -15,8 +15,13 @@ export default {
       t = require('json-loader!yaml-loader!./en.yml')
       t.translations = this._getTranslations(t)
     }
-    Vue.prototype.$I18N = (key) => {
-      return t.translations[`txt.apps.select_an_address.globals.${key}`]
+    Vue.prototype.$I18N = (key, placeholder) => {
+      let value = t.translations[`txt.apps.select_an_address.globals.${key}`]
+      if (!_.isUndefined(placeholder)) {
+        let stringPlaceholder = value.match(new RegExp(/(\{{.*?\}})/i))
+        if (!_.isNull(stringPlaceholder))  return value.replace(stringPlaceholder[0], placeholder)
+      }
+      return value
     }
   },
 
